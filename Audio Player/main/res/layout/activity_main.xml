@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity"
+    android:weightSum="7">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Player"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_centerInParent="true"
+            android:textColor="#4CAFFF">
+
+        </TextView>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/list_button">
+
+        </ImageButton>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/track_pic"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:id="@+id/startTime"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/seekBar"
+            android:textColor="#FFF">
+
+        </TextView>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:theme="@style/SeekBarColor"
+            android:layout_height="wrap_content">
+        </SeekBar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textStyle="bold"
+            android:id="@+id/endTime"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFF">
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/previous_button"
+                android:id="@+id/previous" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/play"
+                android:background="@drawable/play_button">
+
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/next"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_button">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
